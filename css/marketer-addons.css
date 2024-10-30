@@ -1,0 +1,132 @@
+/*---------------------------------------------- 
+
+Marketer addons styling
+
+------------------------------------------------*/
+/*
+USAGE: @include border-radius(4px 4px 0 0);
+*/
+/*
+USAGE: @include box-shadow(inset 0 0 4px rgba(0,0,0,0.22));
+*/
+/***********************************************************/
+pre {
+  background: #333;
+  color: white !important;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  /* Probably the same as paragraphs */
+  font: 13px Monaco !important; }
+  pre p {
+    color: white !important;
+    font: 13px Monaco !important; }
+
+.image_frame_left {
+  float: left;
+  margin-right: 1em; }
+
+.image_frame_right {
+  float: right;
+  margin-left: 1em; }
+
+.image_frame_center {
+  text-align: center;
+  display: block;
+  margin-bottom: 1em; }
+
+.content ul {
+  margin-bottom: 15px; }
+  .content ul li {
+    padding-left: 30px;
+    margin-bottom: 7px; }
+    .content ul li ul {
+      margin-top: 5px; }
+
+table {
+  text-decoration: none;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-spacing: 0 !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -border-radius: 3px;
+  border-radius: 3px; }
+
+th {
+  padding: 5px;
+  font-size: 1.5em;
+  font-weight: 300; }
+  th:first-child {
+    -moz-border-radius: 3px 0 0 0;
+    -webkit-border-radius: 3px 0 0 0;
+    border-radius: 3px 0 0 0; }
+  th:last-child {
+    -moz-border-radius: 0 3px 0 0;
+    -webkit-border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0 0; }
+  th:only-child {
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0; }
+
+td {
+  padding: 5px; }
+
+tr.odd {
+  background-color: white; }
+
+img.border {
+  padding: 4px !important;
+  background: white !important;
+  border: 1px solid #dedede !important; }
+img.shadow {
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15) !important;
+  -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15) !important;
+  -ms-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15) !important;
+  -o-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15) !important;
+  -box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15) !important; }
+
+/*********************
+GRID/COLUMN STYLES
+*********************/
+/* column spacing after */
+.col {
+  padding-bottom: 5%;
+  min-height: 1px; }
+
+@media only screen and (min-width: 481px) {
+  .columns {
+    margin-left: -2.5%; }
+
+  .col1-4 {
+    width: 22.5%; }
+
+  .col2-4,
+  .col1-2 {
+    width: 47.5%; }
+
+  .col3-4 {
+    width: 72.5%; }
+
+  .col1-3 {
+    width: 30.83333%; }
+
+  .col2-3 {
+    width: 64.16667%; }
+
+  .col1-1 {
+    margin-right: 0;
+    width: 100%; }
+
+  .col {
+    float: left;
+    margin-left: 2.5%; } }
